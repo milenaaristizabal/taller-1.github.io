@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-image: url(../img/fondo1.jpg);
+}
+.container{
+    display: flex;
+    justify-content: center;
+   }
+
+@media only screen and (min-width: 320px) {
+
+    nav {
+        top: 0;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        position: sticky;
+        width: 100%;
+        padding: 0%;
+    }
+
+    nav a {
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+    }
+    
+
+    .item {
+        padding: 1rem;
+    }
+
+    .logo {
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 15%;
+        max-width: 200px;
+    }
+
+    .logo i {
+        color: var(--blanco);
+        font-size: 2rem;
+    }
+
+    .menu {
+        background-color: rgba(1, 10, 52, 0.838);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform .6s ease;
+    }
+#fondo{
+    
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/slide1.jpg);
+    color: white;
+    padding-top: 1rem;
+    height: 780px;
+
+}
+.fondo-title{
+    padding: 2%;
+    font-family: marcellus;
+    text-align: left;
+    font-size: 76px;
+    /* background-color: rgba(0,0,0,0.35); */
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.0001));
+    
+}
+
+    /*MENU HAMBURGUESA*/
+
+    .outside {
+        transform: translateY(-100em);
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+     /*MENU HAMBURGUESA*/
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--negro2);
+        font-family: 'Marcellus', serif;
+        position: sticky;
+        font-size: 1.3em;
+        padding: 1rem;
+    }
+    
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 50%;
+        max-width: 180px;
+    }
+
+    .logo i {
+        display: none;
+    }
+
+    .menu {
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+    }
+
+    nav a:hover {
+        background-color: #94b8d8;
+        color: var(--blanco);
+        width: 100%;
+    }
+
+
+}
